@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Year Countdown Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div id="countdown" class="countdown-timer"></div>
+    <div id="current-time" class="current-time"></div>
+    <form id="target-form">
+      <label for="target-datetime">Set Target Date & Time:</label>
+      <input type="datetime-local" id="target-datetime" name="target-datetime" value="2027-01-01T00:00" required>
+      <button type="submit">Set Countdown</button>
+    </form>
+    <div id="fireworks" class="fireworks-container" style="display:none;">
+      <!-- Firework GIFs/images will be shown here -->
+      <img src="fireworks_512.gif" alt="Fireworks" id="firework-img" style="width:100vw;height:100vh;object-fit:cover;">
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

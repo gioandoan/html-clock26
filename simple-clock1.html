@@ -11,43 +11,33 @@
       margin: 0;
     }
     body {
-      height: 100vh;
+      height: 100%;
       margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('./hang-da-2025.jpg');
+      background-image: url('./nha-tho-qui-hiep7.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      color: #fff;
+      color: red;
       position: relative; /* add for overlay positioning */
     }
-    #clock {
-      font-size: 6vh;
-      color: #90caf9;
-      text-shadow: : 0 0 10px #000000;
-      font-weight: bold;
-    }
     #countdown {
-      /* font-size: 15em;
-      display: flex; 
+      font-size: 15em;
+      /* display: flex; 
       justify-content: center;
       align-items: center; */
       /* height: 90vh; */
-      font-size: 28vw;
       margin: 0;
-      font-family: 'Arial Narrow', Arial, sans-serif;
+      font-family: Arial, sans-serif;
       font-weight: bold;
       /* background-color: rgba(0, 26, 255, 0.4); */ /* Transparent background */
-      /* color: rgb(255, 255, 255); */ /* Text color */
-      color: #ffeb3b;
-      text-shadow: 0 0 40px #ff9800, 0 0 10px #000000;
-      /* text-shadow: 3px 3px 5px black; */
+      color: rgb(255, 255, 255); /* Text color */
+      text-shadow: 3px 3px 5px black;
       /* padding: 20px;*/ /* Padding around the text */
       /* border-radius: 2px; */ /* Rounded corners */
       z-index: 1; /* Place the countdown text above the background image */
-      margin-bottom: 2vh;
     }
     #gif-overlay {
       position: absolute;
@@ -96,10 +86,10 @@
       gifOverlay.style.display = 'flex';
       setTimeout(() => {
         gifOverlay.style.display = 'none';
-      }, 50000); // hide the overlay after 50 seconds
+      }, 50000); // hide the overlay after 5 seconds
     }
 
-    setInterval(updateClock, 100);
+    setInterval(updateClock, 1000);
     updateClock(); // initial call to display clock immediately
   </script>
 
@@ -108,10 +98,10 @@
   </div>
 
   <div>
-    <input type="datetime-local" id="countdownTarget" value="2027-01-01T00:00" />
-    <div id="countdown"></div>
     <div id="clock"></div>
-    Qui Hiep - 2025
+    <input type="datetime-local" id="countdownTarget" value="2026-01-01T00:00" />
+    <div id="countdown"></div>
+    Qui Hiep - 2024
   </div>
 </body>
 </html>

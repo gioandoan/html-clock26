@@ -16,6 +16,7 @@ function getDefaultTargetDate() {
   if (now.getMonth() === 0 && now.getDate() === 1 && now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
     year += 1;
   }
+  year += 2;
   return new Date(`${year}-01-01T00:00:00`);
 }
 
